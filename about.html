@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>About Us</title>
+</head>
+
+<body>
+  <header>
+    <a href="#" class="nav-item">About</a>
+    <div class="nav-item">
+      <p>Services<img class="nav-arrow-dpd" src="./img/dpd-arrow.svg" alt=""></p>
+      <div class="nav-dpd-content">
+        <a href="./dubbing.html" class="nav-item-dpd">Dubbing</a>
+        <a href="./record.html" class="nav-item-dpd">Re-Recording</a>
+        <a href="./production.html">Post-production</a>
+      </div>
+    </div>
+    <a href="./projects.html" class="nav-item">Projects</a>
+    <a href="./index.html"><img src="./img/main-logo.svg" alt="" class="logo"></a>
+    <a href="./contacts.html" class="nav-item">Contacts</a>
+    <a href="./career.html" class="nav-item">Career</a>
+    <div class="nav-item">English<img class="nav-arrow-dpd" src="./img/dpd-arrow.svg" alt="">
+      <div class="nav-dpd-content">
+        <a href="#" class="nav-item-dpd">Russian</a>
+      </div>
+    </div>
+    <div class="dropdown-btn" id="dropdown-btn" onclick="openNav()">
+      <div class="line l1"></div>
+      <div class="line l2"></div>
+      <div class="line l3"></div>
+    </div>
+    <div class="dpd-bg" id="dpd">
+      <div class="dropdown" id="dropdown">
+        <a href="./index.html"><img src="./img/main-logo.svg" alt="" class="logo"></a>
+        <div class="dropdown-content" id="dropdown-content">
+          <ul>
+          <li><a class="dpd-item" href="#" onclick="openNav()">About</a></li>
+          <li class="nav-open">
+            <p class="dpd-item">Services <img class="nav-arrow" src="./img/dpd-arrow.svg" alt=""></p>
+          </li>
+          <div class="nav-panel">
+            <a href="./dubbing.html">Dubbing</a>
+            <a href="./record.html">Re-Recording</a>
+            <a href="./production.html">Post-production</a>
+          </div>
+          <li><a class="dpd-item" href="./projects.html">Projects</a></li>
+          <li><a class="dpd-item" href="./contacts.html">Contacts</a></li>
+          <li><a class="dpd-item" href="./career.html">Career</a></li>
+          <li class="nav-open">
+            <p class="dpd-item language">English <img class="nav-arrow" src="./img/dpd-arrow.svg" alt=""></p>
+          </li>
+          <div class="nav-panel">
+            <a href="">Russian</a>
+          </div>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="main-banner about-cont">
+    <p class="banner-descr">About Us</p>
+  </div>
+  <div class="info">
+    <h1>Company was founded in 2013</h1>
+    <p class="info-descr">Main stream: Film making (editing sound from location, ADR, mixing, sound design)</p>
+    <p class="info-descr">Secondary direction: Dubbing in Russian and Kazakh, TV series, animated films, podcasts, demos
+      and commercials</p>
+    <p class="info-item"><img src="./img/black-arrow.png" alt="">A full range of creation sound for feature and
+      documentary films, demos and commercials;</p>
+    <p class="info-item"><img src="./img/black-arrow.png" alt="">Sound recording on film set;</p>
+    <p class="info-item"><img src="./img/black-arrow.png" alt="">Sound editing, removal of interference and extra neous
+      noise (crackling, rustling of lavalier microphones, generator’shum, ventilation noise, traffic,etc.);</p>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="footer-cont">
+        <a href="./index.html"><img src="./img/main-logo-white.svg" alt="" class="logo"></a>
+        <img src="./img/tpn-logo.png" alt="">
+        <nav>
+          <a href="#" class="bottomnav-item">About</a>
+          <div class="bottomnav-item">
+            <p>Services<img class="foot-arrow-dpd" src="./img/dpd-arrow-white.svg" alt=""></p>
+            <div class="foot-dpd-content">
+              <a href="./dubbing.html" class="foot-item-dpd">Dubbing</a>
+              <a href="./record.html" class="foot-item-dpd">Re-Recording</a>
+              <a href="./production.html" class="foot-item-dpd">Post-production</a>
+            </div>
+          </div>
+          <a href="./projects.html" class="bottomnav-item">Projects</a>
+          <a href="" class="bottomnav-item">Clients</a>
+          <a href="./career.html" class="bottomnav-item">Career</a>
+          <a href="./contacts.html" class="bottomnav-item">Contacts</a>
+        </nav>
+        <a class="mail" href="mailto:inbox@moviedalen.com"><img src="./img/mail.svg" alt="">inbox@moviedalen.com</a>
+        <a class="inst" href="http://" target="_blank" rel="noopener noreferrer"><img src="./img/instagram.png"
+            alt=""></a>
+      </div>
+      <p class="made">Made by <img src="./img/marketing.svg" alt=""></p>
+    </div>
+  </footer>
+  <script src="./js/dropdown.js"></script>
+</body>
+
+</html>

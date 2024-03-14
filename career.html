@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./modal.css">
+  <title>About Us</title>
+</head>
+
+<body>
+  <header>
+    <a href="./about.html" class="nav-item">About</a>
+    <div class="nav-item">
+      <p>Services<img class="nav-arrow-dpd" src="./img/dpd-arrow.svg" alt=""></p>
+      <div class="nav-dpd-content">
+        <a href="./dubbing.html" class="nav-item-dpd">Dubbing</a>
+        <a href="./record.html" class="nav-item-dpd">Re-Recording</a>
+        <a href="./production.html">Post-production</a>
+      </div>
+    </div>
+    <a href="./projects.html" class="nav-item">Projects</a>
+    <a href="./index.html"><img src="./img/main-logo.svg" alt="" class="logo"></a>
+    <a href="./contacts.html" class="nav-item">Contacts</a>
+    <a href="#" class="nav-item">Career</a>
+    <div class="nav-item">English<img class="nav-arrow-dpd" src="./img/dpd-arrow.svg" alt="">
+      <div class="nav-dpd-content">
+        <a href="#" class="nav-item-dpd">Russian</a>
+      </div>
+    </div>
+    <div class="dropdown-btn" id="dropdown-btn" onclick="openNav()">
+      <div class="line l1"></div>
+      <div class="line l2"></div>
+      <div class="line l3"></div>
+    </div>
+    <div class="dpd-bg" id="dpd">
+      <div class="dropdown" id="dropdown">
+        <a href="./index.html"><img src="./img/main-logo.svg" alt="" class="logo"></a>
+        <div class="dropdown-content" id="dropdown-content">
+        <ul>
+          <li><a class="dpd-item" href="./about.html">About</a></li>
+          <li class="nav-open">
+            <p class="dpd-item">Services <img class="nav-arrow" src="./img/dpd-arrow.svg" alt=""></p>
+          </li>
+          <div class="nav-panel">
+            <a href="./dubbing.html">Dubbing</a>
+            <a href="./record.html">Re-Recording</a>
+            <a href="./production.html">Post-production</a>
+          </div>
+          <li><a class="dpd-item" href="./projects.html">Projects</a></li>
+          <li><a class="dpd-item" href="./contacts.html">Contacts</a></li>
+          <li><a class="dpd-item" href="#" onclick="openNav()">Career</a></li>
+          <li class="nav-open">
+            <p class="dpd-item language">English <img class="nav-arrow" src="./img/dpd-arrow.svg" alt=""></p>
+          </li>
+          <div class="nav-panel">
+            <a href="">Russian</a>
+          </div>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="cont">
+    <h1 class="career-title">Career</h1>
+    <div class="choose">
+      <p>Position</p>
+      <p>Choose a job</p>
+    </div>
+    <div class="form" action="">
+      <div class="open">
+        <img class="open-arrow" src="./img/black-arrow.png" alt="">
+        <div>
+          <p class="title">Team Assistant</p>
+          <p class="title-descr">The Office of Information and Communications Technology (OICT) is leading the digital
+            transformation of the Organization to enable a better, safer, more sustainable future through secure,
+            reliable, and innovative technology solutions.</p>
+        </div>
+      </div>
+      <form action="" method="post" class="panel">
+        <label class="label" for="name">Artist name*</label>
+        <input class="input" type="text" name="name" id="name">
+        <label class="label" for="email">Artist Email*</label>
+        <input class="input" type="text" name="email" id="email">
+        <label class="label" for="number">Mobile number*</label>
+        <input class="input" type="tel" name="number" id="number">
+        <label class="label" for="residence">Place of residence*</label>
+        <select class="input" name="residence" id="residence">
+          <option class="none" value="0">Please choose an option</option>
+          <option value="1">English</option>
+          <option value="2">Russian</option>
+        </select>
+        <label class="label" for="native">Native language*</label>
+        <select class="input" name="native" id="native">
+          <option class="none" value="0">Please choose an option</option>
+          <option value="1">English</option>
+          <option value="2">Russian</option>
+        </select>
+        <label class="label" for="language">Language in which you work*</label>
+        <select class="input" name="language" id="language">
+          <option class="none" value="0">Please choose an option</option>
+          <option value="1">English</option>
+          <option value="2">Russian</option>
+        </select>
+        <label class="label" for="sample">Upload sample recording (upto 50 MB)</label>
+        <input class="input" type="file" name="sample" id="sample">
+        <label class="label" for="cv">Upload CV</label>
+        <input class="input" type="file" name="cv" id="cv">
+        <label class="label" for="additional">Additional Information</label>
+        <textarea class="input additional" name="additional" id="additional" cols="30" rows="10"></textarea>
+        <img class="captcha" src="./img/captcha.png" alt="">
+        <button class="submit" type="submit">Send</button>
+      </form>
+    </div>
+    <div class="form" action="">
+      <div class="open">
+        <img class="open-arrow" src="./img/black-arrow.png" alt="">
+        <div>
+          <p class="title">Team Assistant</p>
+          <p class="title-descr">The Office of Information and Communications Technology (OICT) is leading the digital
+            transformation of the Organization to enable a better, safer, more sustainable future through secure,
+            reliable, and innovative technology solutions.</p>
+        </div>
+      </div>
+      <form action="" method="post" class="panel">
+        <label class="label" for="name">Artist name*</label>
+        <input class="input" type="text" name="name" id="name">
+        <label class="label" for="email">Artist Email*</label>
+        <input class="input" type="text" name="email" id="email">
+        <label class="label" for="number">Mobile number*</label>
+        <input class="input" type="tel" name="number" id="number">
+        <label class="label" for="residence">Place of residence*</label>
+        <select class="input" name="residence" id="residence">
+          <option class="none" value="0">Please choose an option</option>
+          <option value="1">English</option>
+          <option value="2">Russian</option>
+        </select>
+        <label class="label" for="native">Native language*</label>
+        <select class="input" name="native" id="native">
+          <option class="none" value="0">Please choose an option</option>
+          <option value="1">English</option>
+          <option value="2">Russian</option>
+        </select>
+        <label class="label" for="language">Language in which you work*</label>
+        <select class="input" name="language" id="language">
+          <option class="none" value="0">Please choose an option</option>
+          <option value="1">English</option>
+          <option value="2">Russian</option>
+        </select>
+        <label class="label" for="sample">Upload sample recording (upto 50 MB)</label>
+        <input class="input" type="file" name="sample" id="sample">
+        <label class="label" for="cv">Upload CV</label>
+        <input class="input" type="file" name="cv" id="cv">
+        <label class="label" for="additional">Additional Information</label>
+        <textarea class="input additional" name="additional" id="additional" cols="30" rows="10"></textarea>
+        <img class="captcha" src="./img/captcha.png" alt="">
+        <button class="submit" type="submit">Send</button>
+      </form>
+    </div>
+    <div class="form" action="">
+      <div class="open">
+        <img class="open-arrow" src="./img/black-arrow.png" alt="">
+        <div>
+          <p class="title">Team Assistant</p>
+          <p class="title-descr">The Office of Information and Communications Technology (OICT) is leading the digital
+            transformation of the Organization to enable a better, safer, more sustainable future through secure,
+            reliable, and innovative technology solutions.</p>
+        </div>
+      </div>
+      <form action="" method="post" class="panel">
+        <label class="label" for="name">Artist name*</label>
+        <input class="input" type="text" name="name" id="name">
+        <label class="label" for="email">Artist Email*</label>
+        <input class="input" type="text" name="email" id="email">
+        <label class="label" for="number">Mobile number*</label>
+        <input class="input" type="tel" name="number" id="number">
+        <label class="label" for="residence">Place of residence*</label>
+        <select class="input" name="residence" id="residence">
+          <option class="none" value="0">Please choose an option</option>
+          <option value="1">English</option>
+          <option value="2">Russian</option>
+        </select>
+        <label class="label" for="native">Native language*</label>
+        <select class="input" name="native" id="native">
+          <option class="none" value="0">Please choose an option</option>
+          <option value="1">English</option>
+          <option value="2">Russian</option>
+        </select>
+        <label class="label" for="language">Language in which you work*</label>
+        <select class="input" name="language" id="language">
+          <option class="none" value="0">Please choose an option</option>
+          <option value="1">English</option>
+          <option value="2">Russian</option>
+        </select>
+        <label class="label" for="sample">Upload sample recording (upto 50 MB)</label>
+        <input class="input" type="file" name="sample" id="sample">
+        <label class="label" for="cv">Upload CV</label>
+        <input class="input" type="file" name="cv" id="cv">
+        <label class="label" for="additional">Additional Information</label>
+        <textarea class="input additional" name="additional" id="additional" cols="30" rows="10"></textarea>
+        <img class="captcha" src="./img/captcha.png" alt="">
+        <button class="submit" type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="footer-cont">
+        <a href="./index.html"><img src="./img/main-logo-white.svg" alt="" class="logo"></a>
+        <img src="./img/tpn-logo.png" alt="">
+        <nav>
+          <a href="./about.html" class="bottomnav-item">About</a>
+          <div class="bottomnav-item">
+            <p>Services<img class="foot-arrow-dpd" src="./img/dpd-arrow-white.svg" alt=""></p>
+            <div class="foot-dpd-content">
+              <a href="./dubbing.html" class="foot-item-dpd">Dubbing</a>
+              <a href="./record.html" class="foot-item-dpd">Re-Recording</a>
+              <a href="./production.html" class="foot-item-dpd">Post-production</a>
+            </div>
+          </div>
+          <a href="./projects.html" class="bottomnav-item">Projects</a>
+          <a href="" class="bottomnav-item">Clients</a>
+          <a href="#" class="bottomnav-item">Career</a>
+          <a href="./contacts.html" class="bottomnav-item">Contacts</a>
+        </nav>
+        <a class="mail" href="mailto:inbox@moviedalen.com"><img src="./img/mail.svg" alt="">inbox@moviedalen.com</a>
+        <a class="inst" href="http://" target="_blank" rel="noopener noreferrer"><img src="./img/instagram.png"
+            alt=""></a>
+      </div>
+      <p class="made">Made by <img src="./img/marketing.svg" alt=""></p>
+    </div>
+  </footer>
+  <div class="modal">
+    <div class="modal-content">
+      <svg class="close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M18.3597 19.7797L11.9997 13.4097L5.63973 19.7797L4.21973 18.3597L10.5897 11.9997L4.21973 5.63973L5.63973 4.21973L11.9997 10.5897L18.3597 4.22973L19.7697 5.63973L13.4097 11.9997L19.7697 18.3597L18.3597 19.7797Z" fill="black"/>
+      </svg>
+      <p class="modal-title">Thank you</p>
+      <p class="modal-text">We will review your resume and call you back</p>
+      <button class="modal-button">Back</button>
+    </div>
+  </div>
+  <script src="./js/accordion.js"></script>
+  <script src="./js/mask_list.js"></script>
+  <script>
+    mask("#number");
+  </script>
+  <script src="./js/dropdown.js"></script>
+  <script src="./js/career-modal.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+.error {
+  text-align: center;
+  padding: 45px 0 122px;
+}
+
+.error-num {
+  font-size: 128px;
+  font-weight: 700;
+  line-height: 124%;
+  letter-spacing: 1.28px;
+}
+
+.error-text {
+  font-size: 40px;
+  line-height: 99.5%;
+  letter-spacing: 0.4px;
+  padding-bottom: 73px;
+}
+
+.error-button {
+  color: #FFF;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.18px;
+  padding: 20px 54px;
+  border-radius: 4px;
+  background: #000;
+  border: 1px solid #000;
+  transition: .3s;
+}
+
+.error-button:hover {
+  color: #000;
+  background: transparent;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .error {
+    padding: 40px 0 80px;
+  }
+  .error img {
+    width: 80px;
+  }
+  .error-num {
+    font-size: 90px;
+  }
+  .error-text {
+    font-size: 30px;
+    padding-bottom: 43px;
+  }
+  .error-button {
+    font-size: 14px;
+    padding: 15px 40px;
+  }
+}

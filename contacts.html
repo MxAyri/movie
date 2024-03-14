@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>About Us</title>
+</head>
+
+<body>
+    <header>
+      <a href="./about.html" class="nav-item">About</a>
+      <div class="nav-item">
+        <p>Services<img class="nav-arrow-dpd" src="./img/dpd-arrow.svg" alt=""></p>
+        <div class="nav-dpd-content">
+          <a href="./dubbing.html" class="nav-item-dpd">Dubbing</a>
+          <a href="./record.html" class="nav-item-dpd">Re-Recording</a>
+          <a href="./production.html">Post-production</a>
+        </div>
+      </div>
+      <a href="./projects.html" class="nav-item">Projects</a>
+      <a href="./index.html"><img src="./img/main-logo.svg" alt="" class="logo"></a>
+      <a href="#" class="nav-item">Contacts</a>
+      <a href="./career.html" class="nav-item">Career</a>
+      <div class="nav-item">English<img class="nav-arrow-dpd" src="./img/dpd-arrow.svg" alt="">
+        <div class="nav-dpd-content">
+          <a href="#" class="nav-item-dpd">Russian</a>
+        </div>
+      </div>
+      <div class="dropdown-btn" id="dropdown-btn" onclick="openNav()">
+        <div class="line l1"></div>
+        <div class="line l2"></div>
+        <div class="line l3"></div>
+      </div>
+      <div class="dpd-bg" id="dpd">
+        <div class="dropdown" id="dropdown">
+          <a href="./index.html"><img src="./img/main-logo.svg" alt="" class="logo"></a>
+          <div class="dropdown-content" id="dropdown-content">
+            <ul>
+            <li><a class="dpd-item" href="./about.html">About</a></li>
+            <li class="nav-open">
+              <p class="dpd-item">Services <img class="nav-arrow" src="./img/dpd-arrow.svg" alt=""></p>
+            </li>
+            <div class="nav-panel">
+              <a href="./dubbing.html">Dubbing</a>
+              <a href="./record.html">Re-Recording</a>
+              <a href="./production.html">Post-production</a>
+            </div>
+            <li><a class="dpd-item" href="./projects.html">Projects</a></li>
+            <li><a class="dpd-item" href="#" onclick="openNav()">Contacts</a></li>
+            <li><a class="dpd-item" href="./career.html">Career</a></li>
+            <li class="nav-open">
+              <p class="dpd-item language">English <img class="nav-arrow" src="./img/dpd-arrow.svg" alt=""></p>
+            </li>
+            <div class="nav-panel">
+              <a href="">Russian</a>
+            </div>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="contacts-main">
+      <div class="contacts-text">
+        <h1>Contact us</h1>
+        <a href="https://www.google.com/maps/place/108,+ул.+Жандосова+60a,+Алматы+050060,+Казахстан/@43.2298459,76.8940267,17z/data=!3m1!4b1!4m5!3m4!1s0x38836921b7e1f349:0x4e65155fc500f9b9!8m2!3d43.2298459!4d76.8966016?entry=ttu"
+          target="_blank" rel="noopener noreferrer"><img class="contacts-ico" src="./img/marker.svg" alt="">
+          <p>Almaty,Kazakhstan, Office 108, 60a Zhandosov Street</p>
+        </a>
+        <a href="mailto:inbox@moviedalen.com"><img class="contacts-ico" src="./img/mail-black.svg"
+            alt="">inbox@moviedalen.com</a>
+      </div>
+      <iframe class="google"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.029273155396!2d76.8966016!3d43.2298459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836921b7e1f349%3A0x4e65155fc500f9b9!2zMTA4LCDRg9C7LiDQltCw0L3QtNC-0YHQvtCy0LAgNjBhLCDQkNC70LzQsNGC0YsgMDUwMDYwLCDQmtCw0LfQsNGF0YHRgtCw0L0!5e0!3m2!1sru!2s!4v1692786095023!5m2!1sru!2s"
+        width="464" height="280" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="footer-cont">
+          <a href="./index.html"><img src="./img/main-logo-white.svg" alt="" class="logo"></a>
+          <img src="./img/tpn-logo.png" alt="">
+          <nav>
+            <a href="./about.html" class="bottomnav-item">About</a>
+            <div class="bottomnav-item">
+              <p>Services<img class="foot-arrow-dpd" src="./img/dpd-arrow-white.svg" alt=""></p>
+              <div class="foot-dpd-content">
+                <a href="./dubbing.html" class="foot-item-dpd">Dubbing</a>
+                <a href="./record.html" class="foot-item-dpd">Re-Recording</a>
+                <a href="./production.html" class="foot-item-dpd">Post-production</a>
+              </div>
+            </div>
+            <a href="./projects.html" class="bottomnav-item">Projects</a>
+            <a href="" class="bottomnav-item">Clients</a>
+            <a href="./career.html" class="bottomnav-item">Career</a>
+            <a href="#" class="bottomnav-item">Contacts</a>
+          </nav>
+          <a class="mail" href="mailto:inbox@moviedalen.com"><img src="./img/mail.svg" alt="">inbox@moviedalen.com</a>
+          <a class="inst" href="http://" target="_blank" rel="noopener noreferrer"><img src="./img/instagram.png"
+              alt=""></a>
+        </div>
+        <p class="made">Made by <img src="./img/marketing.svg" alt=""></p>
+      </div>
+    </footer>
+  <script src="./js/dropdown.js"></script>
+</body>
+
+</html>
